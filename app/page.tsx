@@ -786,22 +786,22 @@ export default function Fusion24Website() {
                 } opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
 
                 {plan.popular && (
-                  <div className="absolute -top-3 -right-3 z-20">
-                    <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg border border-orange-400">
+                  <div className="absolute top-4 right-4 z-20">
+                    <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                       ⭐ POPULAR
                     </div>
                   </div>
                 )}
 
                 {!plan.popular && plan.badge && (
-                  <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-20">
-                    <div className="bg-gradient-to-r from-gray-700 to-gray-800 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full text-xs sm:text-sm font-bold shadow-xl border border-gray-600">
+                  <div className="absolute top-4 right-4 z-20">
+                    <div className="bg-gradient-to-r from-gray-700 to-gray-800 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                       {plan.badge}
                     </div>
                   </div>
                 )}
                 
-                <CardHeader className="relative z-10 text-center pt-8 sm:pt-12 pb-6 sm:pb-8 px-4 sm:px-6">
+                <CardHeader className="relative z-10 text-center pt-16 sm:pt-20 pb-6 sm:pb-8 px-4 sm:px-6">
                   <div className="mb-4 sm:mb-6">
                     <div className="text-sm sm:text-lg font-black text-orange-400 uppercase tracking-wide mb-2 sm:mb-3">{plan.name}</div>
                     <div className="text-4xl sm:text-6xl font-black text-white mb-2 sm:mb-3">{plan.price}</div>
