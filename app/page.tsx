@@ -641,7 +641,7 @@ export default function Fusion24Website() {
           </div>
 
           {/* Training Methodology */}
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-6xl mx-auto mt-16 sm:mt-20 lg:mt-24">
             <Card className="bg-gradient-to-br from-gray-900/90 to-black/90 backdrop-blur-xl border-2 border-orange-500/30 rounded-3xl shadow-2xl">
               <CardHeader className="text-center">
                 <CardTitle className="text-4xl font-black text-white mb-4">OUR TRAINING METHODOLOGY</CardTitle>
