@@ -17,27 +17,28 @@ export default function Fusion24Website() {
 
       {/* Header */}
       <header className="fixed top-0 w-full z-50 bg-black/95 backdrop-blur-2xl border-b border-orange-500/30 shadow-2xl">
-        <div className="container mx-auto px-6 py-4">
+        <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
           <div className="flex justify-between items-center">
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-2 sm:space-x-4">
               <div className="relative group">
-                <div className="w-16 h-16 bg-white/10 backdrop-blur-xl rounded-2xl flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-all duration-300 border border-orange-500/30">
-                  <img src="/images.png" alt="Fusion24" width={60} height={60} className="rounded-xl object-contain" />
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-white/10 backdrop-blur-xl rounded-2xl flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-all duration-300 border border-orange-500/30">
+                  <img src="/images.png" alt="Fusion24" width={40} height={40} className="sm:w-[60px] sm:h-[60px] rounded-xl object-contain" />
                 </div>
-                <div className="absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full animate-ping"></div>
-                <div className="absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full"></div>
+                <div className="absolute -top-1 -right-1 w-4 h-4 sm:w-6 sm:h-6 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full animate-ping"></div>
+                <div className="absolute -top-1 -right-1 w-4 h-4 sm:w-6 sm:h-6 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full"></div>
               </div>
               <div>
-                <span className="text-3xl font-black tracking-tight bg-gradient-to-r from-white via-orange-200 to-white bg-clip-text text-transparent drop-shadow-lg">FUSION24</span>
-                <div className="text-xs text-orange-400 font-bold tracking-widest flex items-center gap-1 drop-shadow-md">
-                  <Crown className="h-3 w-3" />
-                  PREMIUM FITNESS STUDIO
-                  <Crown className="h-3 w-3" />
+                <span className="text-xl sm:text-3xl font-black tracking-tight bg-gradient-to-r from-white via-orange-200 to-white bg-clip-text text-transparent drop-shadow-lg">FUSION24</span>
+                <div className="text-[8px] sm:text-xs text-orange-400 font-bold tracking-widest flex items-center gap-1 drop-shadow-md">
+                  <Crown className="h-2 w-2 sm:h-3 sm:w-3" />
+                  <span className="hidden sm:inline">PREMIUM FITNESS STUDIO</span>
+                  <span className="sm:hidden">FITNESS</span>
+                  <Crown className="h-2 w-2 sm:h-3 sm:w-3" />
                 </div>
               </div>
             </div>
             
-            <nav className="hidden md:flex items-center space-x-10">
+            <nav className="hidden lg:flex items-center space-x-10">
               {['PROGRAMS', 'TRAINERS', 'PRICING', 'SCHEDULE', 'FACILITIES'].map((item) => (
                 <a key={item} href={`#${item.toLowerCase()}`} className="text-sm font-bold hover:text-orange-400 transition-all duration-300 relative group tracking-wide">
                   {item}
@@ -46,9 +47,10 @@ export default function Fusion24Website() {
               ))}
             </nav>
 
-            <Button className="bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 hover:from-orange-600 hover:via-red-600 hover:to-orange-700 text-white font-black px-8 py-3 rounded-2xl shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 transform hover:scale-105 border border-orange-400/30">
-              <Sparkles className="mr-2 h-5 w-5" />
-              JOIN ELITE
+            <Button className="bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 hover:from-orange-600 hover:via-red-600 hover:to-orange-700 text-white font-black px-4 sm:px-8 py-2 sm:py-3 text-sm sm:text-base rounded-2xl shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 transform hover:scale-105 border border-orange-400/30">
+              <Sparkles className="mr-1 sm:mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+              <span className="hidden sm:inline">JOIN ELITE</span>
+              <span className="sm:hidden">JOIN</span>
             </Button>
           </div>
         </div>
@@ -70,16 +72,16 @@ export default function Fusion24Website() {
         <div className="absolute top-48 right-48 w-3 h-3 bg-red-500 rounded-full animate-bounce delay-300"></div>
         <div className="absolute bottom-32 left-48 w-5 h-5 bg-yellow-500 rounded-full animate-bounce delay-500"></div>
 
-        <div className="relative z-10 container mx-auto px-6 text-center">
-          <div className="mb-12">
-            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 rounded-full px-8 py-4 mb-8 backdrop-blur-xl shadow-2xl">
-              <Clock className="h-6 w-6 text-orange-400 animate-spin" />
-              <span className="text-lg font-black text-orange-300 tracking-wide">24×7 PREMIUM FITNESS ECOSYSTEM</span>
-              <Diamond className="h-6 w-6 text-orange-400 animate-pulse" />
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center">
+          <div className="mb-8 sm:mb-12">
+            <div className="inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 rounded-full px-4 sm:px-8 py-3 sm:py-4 mb-6 sm:mb-8 backdrop-blur-xl shadow-2xl">
+              <Clock className="h-4 w-4 sm:h-6 sm:w-6 text-orange-400 animate-spin" />
+              <span className="text-sm sm:text-lg font-black text-orange-300 tracking-wide">24×7 PREMIUM FITNESS</span>
+              <Diamond className="h-4 w-4 sm:h-6 sm:w-6 text-orange-400 animate-pulse" />
             </div>
           </div>
 
-          <h1 className="text-7xl md:text-9xl lg:text-[12rem] font-black mb-8 leading-none">
+          <h1 className="text-4xl sm:text-7xl md:text-9xl lg:text-[12rem] font-black mb-6 sm:mb-8 leading-none">
             <span className="bg-gradient-to-r from-white via-orange-100 to-white bg-clip-text text-transparent drop-shadow-2xl">
               TRAIN STRONG
             </span>
@@ -89,53 +91,53 @@ export default function Fusion24Website() {
             </span>
           </h1>
 
-          <div className="max-w-6xl mx-auto mb-12">
-            <p className="text-2xl md:text-3xl text-orange-200 mb-6 font-bold leading-relaxed">
+          <div className="max-w-6xl mx-auto mb-8 sm:mb-12">
+            <p className="text-lg sm:text-2xl md:text-3xl text-orange-200 mb-4 sm:mb-6 font-bold leading-relaxed">
               Premium fitness gym in <span className="text-orange-400 font-black">Iyyappanthangal</span> offering 
             </p>
-            <div className="flex flex-wrap justify-center gap-4 text-xl md:text-2xl font-bold">
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-4 text-sm sm:text-xl md:text-2xl font-bold">
               {['Strength Training', 'Boxing', 'CrossFit', 'Bootcamp'].map((item, index) => (
-                <span key={item} className="bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 px-6 py-3 rounded-2xl backdrop-blur-xl shadow-xl transform hover:scale-105 transition-all duration-300">
+                <span key={item} className="bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 px-3 sm:px-6 py-2 sm:py-3 rounded-xl sm:rounded-2xl backdrop-blur-xl shadow-xl transform hover:scale-105 transition-all duration-300">
                   {item}
                 </span>
               ))}
             </div>
           </div>
 
-          <p className="text-xl text-gray-300 mb-16 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-xl text-gray-300 mb-12 sm:mb-16 max-w-4xl mx-auto leading-relaxed px-4">
             Complete fitness ecosystem with <span className="text-orange-400 font-bold">certified expert trainers</span>, 
             recovery facilities, and long-term transformation programs
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-8 justify-center items-center mb-20">
-            <Button size="lg" className="bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 hover:from-orange-600 hover:via-red-600 hover:to-orange-700 text-white font-black px-16 py-8 text-2xl rounded-3xl shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 transform hover:scale-110 border-2 border-orange-400/50">
-              <Trophy className="mr-4 h-8 w-8" />
+          <div className="flex flex-col gap-4 sm:gap-8 justify-center items-center mb-16 sm:mb-20 px-4">
+            <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 hover:from-orange-600 hover:via-red-600 hover:to-orange-700 text-white font-black px-8 sm:px-16 py-6 sm:py-8 text-lg sm:text-2xl rounded-2xl sm:rounded-3xl shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 transform hover:scale-110 border-2 border-orange-400/50">
+              <Trophy className="mr-2 sm:mr-4 h-6 w-6 sm:h-8 sm:w-8" />
               BOOK FREE TRIAL
-              <ArrowRight className="ml-4 h-8 w-8" />
+              <ArrowRight className="ml-2 sm:ml-4 h-6 w-6 sm:h-8 sm:w-8" />
             </Button>
             <Button 
               size="lg" 
               variant="outline" 
               onClick={() => window.open('https://www.google.com/maps/search/Fusion24+Gym+Iyyappanthangal', '_blank')}
-              className="border-3 border-white/50 text-white hover:bg-white hover:text-black font-black px-16 py-8 text-2xl rounded-3xl backdrop-blur-xl transition-all duration-300 transform hover:scale-110 shadow-2xl bg-black/30"
+              className="w-full sm:w-auto border-3 border-white/50 text-white hover:bg-white hover:text-black font-black px-8 sm:px-16 py-6 sm:py-8 text-lg sm:text-2xl rounded-2xl sm:rounded-3xl backdrop-blur-xl transition-all duration-300 transform hover:scale-110 shadow-2xl bg-black/30"
             >
-              <MapPin className="mr-4 h-8 w-8" />
+              <MapPin className="mr-2 sm:mr-4 h-6 w-6 sm:h-8 sm:w-8" />
               <span className="drop-shadow-lg">VISIT THE GYM</span>
             </Button>
           </div>
 
           {/* Enhanced Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 max-w-5xl mx-auto px-4">
             {[
               { number: "24/7", label: "Premium Access", icon: Clock },
               { number: "2000+", label: "Elite Members", icon: Users },
               { number: "15+", label: "Expert Programs", icon: Target },
               { number: "10+", label: "Certified Trainers", icon: Award }
             ].map((stat, index) => (
-              <div key={index} className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl border border-orange-500/30 rounded-3xl p-8 text-center shadow-2xl transform hover:scale-105 transition-all duration-300">
-                <stat.icon className="h-12 w-12 text-orange-400 mx-auto mb-4" />
-                <div className="text-4xl font-black text-orange-400 mb-2">{stat.number}</div>
-                <div className="text-sm text-gray-300 uppercase tracking-wide font-bold">{stat.label}</div>
+              <div key={index} className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl border border-orange-500/30 rounded-2xl sm:rounded-3xl p-4 sm:p-8 text-center shadow-2xl transform hover:scale-105 transition-all duration-300">
+                <stat.icon className="h-8 w-8 sm:h-12 sm:w-12 text-orange-400 mx-auto mb-2 sm:mb-4" />
+                <div className="text-2xl sm:text-4xl font-black text-orange-400 mb-1 sm:mb-2">{stat.number}</div>
+                <div className="text-xs sm:text-sm text-gray-300 uppercase tracking-wide font-bold">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -500,14 +502,14 @@ export default function Fusion24Website() {
       {/* Certified Trainers Section */}
       <section id="trainers" className="py-32 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-950 to-black"></div>
-        <div className="relative z-10 container mx-auto px-6">
-          <div className="text-center mb-20">
-            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 rounded-full px-8 py-4 mb-8 backdrop-blur-xl shadow-2xl">
-              <Award className="h-6 w-6 text-orange-400" />
-              <span className="text-lg font-black text-orange-300 tracking-wide">CERTIFIED EXPERT TRAINERS</span>
-              <Trophy className="h-6 w-6 text-orange-400" />
+        <div className="relative z-10 container mx-auto px-4 sm:px-6">
+          <div className="text-center mb-16 sm:mb-20">
+            <div className="inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 rounded-full px-4 sm:px-8 py-3 sm:py-4 mb-6 sm:mb-8 backdrop-blur-xl shadow-2xl">
+              <Award className="h-4 w-4 sm:h-6 sm:w-6 text-orange-400" />
+              <span className="text-sm sm:text-lg font-black text-orange-300 tracking-wide">CERTIFIED EXPERT TRAINERS</span>
+              <Trophy className="h-4 w-4 sm:h-6 sm:w-6 text-orange-400" />
             </div>
-            <h2 className="text-6xl md:text-8xl font-black mb-8">
+            <h2 className="text-4xl sm:text-6xl md:text-8xl font-black mb-6 sm:mb-8">
               <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                 WORLD-CLASS
               </span>
@@ -516,30 +518,30 @@ export default function Fusion24Website() {
                 COACHING TEAM
               </span>
             </h2>
-            <p className="text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed px-4">
               Our trainers hold <span className="text-orange-400 font-bold">international certifications</span> and have transformed thousands of lives
             </p>
           </div>
 
           {/* Certification Badges */}
-          <div className="grid md:grid-cols-4 gap-6 mb-16 max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 mb-12 sm:mb-16 max-w-6xl mx-auto px-4">
             {[
               { cert: "NASM-CPT", desc: "National Academy of Sports Medicine" },
               { cert: "ACSM", desc: "American College of Sports Medicine" },
               { cert: "CF-L2", desc: "CrossFit Level 2 Trainer" },
               { cert: "FMS", desc: "Functional Movement Screen" }
             ].map((cert, index) => (
-              <div key={index} className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl border border-orange-500/30 rounded-2xl p-6 text-center shadow-2xl transform hover:scale-105 transition-all duration-300">
-                <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Award className="h-8 w-8 text-white" />
+              <div key={index} className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl border border-orange-500/30 rounded-xl sm:rounded-2xl p-3 sm:p-6 text-center shadow-2xl transform hover:scale-105 transition-all duration-300">
+                <div className="w-10 h-10 sm:w-16 sm:h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-4">
+                  <Award className="h-5 w-5 sm:h-8 sm:w-8 text-white" />
                 </div>
-                <h4 className="font-black text-orange-400 text-xl mb-2">{cert.cert}</h4>
-                <p className="text-sm text-gray-400">{cert.desc}</p>
+                <h4 className="font-black text-orange-400 text-sm sm:text-xl mb-1 sm:mb-2">{cert.cert}</h4>
+                <p className="text-xs sm:text-sm text-gray-400 leading-tight">{cert.desc}</p>
               </div>
             ))}
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-20">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-16 sm:mb-20 px-4">
             {[
               {
                 name: "RAJESH KUMAR",
@@ -704,7 +706,7 @@ export default function Fusion24Website() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto mb-20">
+          <div className="grid md:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto mb-16 sm:mb-20 px-4">
             {[
               {
                 name: "3-MONTH STARTER",
@@ -778,9 +780,9 @@ export default function Fusion24Website() {
             ].map((plan, index) => (
               <Card key={index} className={`relative overflow-hidden transform transition-all duration-500 hover:scale-105 ${
                 plan.popular 
-                  ? 'border-3 border-orange-500 scale-110 shadow-2xl shadow-orange-500/30' 
+                  ? 'border-3 border-orange-500 md:scale-110 shadow-2xl shadow-orange-500/30' 
                   : 'border-2 border-gray-800/50 hover:border-orange-500/50'
-              } bg-gradient-to-br from-gray-900/95 to-black/95 backdrop-blur-xl rounded-3xl`}>
+              } bg-gradient-to-br from-gray-900/95 to-black/95 backdrop-blur-xl rounded-2xl sm:rounded-3xl`}>
                 
                 {/* 3D Glow Effect */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${
@@ -790,50 +792,50 @@ export default function Fusion24Website() {
                 } opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
 
                 {plan.popular && (
-                  <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-20">
-                    <div className="bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 text-white px-8 py-3 rounded-full text-lg font-black shadow-2xl border-2 border-orange-400/50">
-                      <Crown className="inline h-5 w-5 mr-2" />
+                  <div className="absolute -top-4 sm:-top-6 left-1/2 transform -translate-x-1/2 z-20">
+                    <div className="bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 text-white px-4 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-lg font-black shadow-2xl border-2 border-orange-400/50">
+                      <Crown className="inline h-3 w-3 sm:h-5 sm:w-5 mr-1 sm:mr-2" />
                       {plan.badge}
-                      <Crown className="inline h-5 w-5 ml-2" />
+                      <Crown className="inline h-3 w-3 sm:h-5 sm:w-5 ml-1 sm:ml-2" />
                     </div>
                   </div>
                 )}
 
                 {!plan.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-20">
-                    <div className="bg-gradient-to-r from-gray-700 to-gray-800 text-white px-6 py-2 rounded-full text-sm font-bold shadow-xl">
+                  <div className="absolute -top-3 sm:-top-4 left-1/2 transform -translate-x-1/2 z-20">
+                    <div className="bg-gradient-to-r from-gray-700 to-gray-800 text-white px-3 sm:px-6 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-bold shadow-xl">
                       {plan.badge}
                     </div>
                   </div>
                 )}
                 
-                <CardHeader className="relative z-10 text-center pt-12 pb-8">
-                  <div className="mb-6">
-                    <div className="text-lg font-black text-orange-400 uppercase tracking-wide mb-3">{plan.name}</div>
-                    <div className="text-6xl font-black text-white mb-3">{plan.price}</div>
-                    <div className="text-gray-400 text-lg mb-2">{plan.period}</div>
-                    <div className="text-2xl text-orange-400 font-bold mb-2">{plan.monthlyPrice}</div>
+                <CardHeader className="relative z-10 text-center pt-8 sm:pt-12 pb-6 sm:pb-8">
+                  <div className="mb-4 sm:mb-6">
+                    <div className="text-sm sm:text-lg font-black text-orange-400 uppercase tracking-wide mb-2 sm:mb-3">{plan.name}</div>
+                    <div className="text-4xl sm:text-6xl font-black text-white mb-2 sm:mb-3">{plan.price}</div>
+                    <div className="text-gray-400 text-sm sm:text-lg mb-1 sm:mb-2">{plan.period}</div>
+                    <div className="text-lg sm:text-2xl text-orange-400 font-bold mb-2">{plan.monthlyPrice}</div>
                     {plan.savings && (
-                      <div className="inline-block bg-green-500/20 border border-green-500/30 px-4 py-2 rounded-full">
-                        <span className="text-green-400 font-bold text-sm">{plan.savings}</span>
+                      <div className="inline-block bg-green-500/20 border border-green-500/30 px-3 sm:px-4 py-1 sm:py-2 rounded-full">
+                        <span className="text-green-400 font-bold text-xs sm:text-sm">{plan.savings}</span>
                       </div>
                     )}
-                    <div className="text-gray-500 mt-3 text-lg">{plan.description}</div>
+                    <div className="text-gray-500 mt-2 sm:mt-3 text-sm sm:text-lg">{plan.description}</div>
                   </div>
                 </CardHeader>
                 
-                <CardContent className="relative z-10 px-8 pb-8">
-                  <ul className="space-y-4 mb-8">
+                <CardContent className="relative z-10 px-4 sm:px-8 pb-6 sm:pb-8">
+                  <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
                     {plan.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start gap-3">
-                        <CheckCircle className="h-6 w-6 text-orange-500 flex-shrink-0 mt-0.5" />
-                        <span className="text-gray-300 leading-relaxed">{feature}</span>
+                      <li key={featureIndex} className="flex items-start gap-2 sm:gap-3">
+                        <CheckCircle className="h-4 w-4 sm:h-6 sm:w-6 text-orange-500 flex-shrink-0 mt-0.5" />
+                        <span className="text-gray-300 leading-relaxed text-sm sm:text-base">{feature}</span>
                       </li>
                     ))}
                   </ul>
                   
                   <Button 
-                    className={`w-full py-6 rounded-2xl font-black text-xl transition-all duration-300 transform hover:scale-105 ${
+                    className={`w-full py-4 sm:py-6 rounded-xl sm:rounded-2xl font-black text-lg sm:text-xl transition-all duration-300 transform hover:scale-105 ${
                       plan.popular 
                         ? 'bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 hover:from-orange-600 hover:via-red-600 hover:to-orange-700 text-white shadow-2xl hover:shadow-orange-500/50 border-2 border-orange-400/50' 
                         : 'border-3 border-orange-500/50 text-orange-400 hover:bg-gradient-to-r hover:from-orange-500 hover:to-red-500 hover:text-white bg-transparent hover:border-orange-400'
@@ -841,13 +843,14 @@ export default function Fusion24Website() {
                   >
                     {plan.popular ? (
                       <>
-                        <Crown className="mr-3 h-6 w-6" />
-                        CHOOSE PREMIUM
-                        <Crown className="ml-3 h-6 w-6" />
+                        <Crown className="mr-2 sm:mr-3 h-5 w-5 sm:h-6 sm:w-6" />
+                        <span className="hidden sm:inline">CHOOSE PREMIUM</span>
+                        <span className="sm:hidden">CHOOSE</span>
+                        <Crown className="ml-2 sm:ml-3 h-5 w-5 sm:h-6 sm:w-6" />
                       </>
                     ) : (
                       <>
-                        <Trophy className="mr-3 h-6 w-6" />
+                        <Trophy className="mr-2 sm:mr-3 h-5 w-5 sm:h-6 sm:w-6" />
                         SELECT PLAN
                       </>
                     )}
@@ -1047,19 +1050,19 @@ export default function Fusion24Website() {
             ))}
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
-            <Button size="lg" className="bg-white text-orange-600 hover:bg-yellow-100 font-black text-2xl px-16 py-8 rounded-3xl shadow-2xl hover:shadow-white/30 transition-all duration-300 transform hover:scale-110 border-2 border-white/50">
-              <Trophy className="mr-4 h-8 w-8" />
+          <div className="flex flex-col gap-6 sm:gap-8 justify-center items-center">
+            <Button size="lg" className="w-full sm:w-auto bg-white text-orange-600 hover:bg-yellow-100 font-black text-lg sm:text-2xl px-8 sm:px-16 py-6 sm:py-8 rounded-2xl sm:rounded-3xl shadow-2xl hover:shadow-white/30 transition-all duration-300 transform hover:scale-110 border-2 border-white/50">
+              <Trophy className="mr-2 sm:mr-4 h-6 w-6 sm:h-8 sm:w-8" />
               BOOK FREE TRIAL
-              <ArrowRight className="ml-4 h-8 w-8" />
+              <ArrowRight className="ml-2 sm:ml-4 h-6 w-6 sm:h-8 sm:w-8" />
             </Button>
             <Button 
               size="lg" 
               variant="outline" 
               onClick={() => window.open('tel:+919876543210')}
-              className="border-3 border-white text-white hover:bg-white hover:text-orange-600 font-black text-2xl px-16 py-8 rounded-3xl backdrop-blur-xl transition-all duration-300 transform hover:scale-110 shadow-2xl bg-black/20"
+              className="w-full sm:w-auto border-3 border-white text-white hover:bg-white hover:text-orange-600 font-black text-lg sm:text-2xl px-8 sm:px-16 py-6 sm:py-8 rounded-2xl sm:rounded-3xl backdrop-blur-xl transition-all duration-300 transform hover:scale-110 shadow-2xl bg-black/20"
             >
-              <Phone className="mr-4 h-8 w-8" />
+              <Phone className="mr-2 sm:mr-4 h-6 w-6 sm:h-8 sm:w-8" />
               <span className="drop-shadow-lg">REQUEST CALL BACK</span>
             </Button>
           </div>
@@ -1068,36 +1071,36 @@ export default function Fusion24Website() {
 
       {/* Enhanced Footer */}
       <footer className="bg-black border-t-2 border-orange-500/30 py-20">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-4 gap-12 mb-16">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="grid md:grid-cols-4 gap-8 sm:gap-12 mb-12 sm:mb-16">
             <div>
-              <div className="flex items-center space-x-4 mb-8">
+              <div className="flex items-center space-x-3 sm:space-x-4 mb-6 sm:mb-8">
                 <div className="relative">
-                  <div className="w-16 h-16 bg-white/10 backdrop-blur-xl rounded-2xl flex items-center justify-center shadow-2xl border border-orange-500/30">
-                    <img src="/images.png" alt="Fusion24" width={60} height={60} className="rounded-xl object-contain" />
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-white/10 backdrop-blur-xl rounded-2xl flex items-center justify-center shadow-2xl border border-orange-500/30">
+                    <img src="/images.png" alt="Fusion24" width={40} height={40} className="sm:w-[60px] sm:h-[60px] rounded-xl object-contain" />
                   </div>
-                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full animate-pulse"></div>
+                  <div className="absolute -top-1 -right-1 w-4 h-4 sm:w-6 sm:h-6 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full animate-pulse"></div>
                 </div>
                 <div>
-                  <span className="text-2xl font-black text-white">FUSION24</span>
+                  <span className="text-lg sm:text-2xl font-black text-white">FUSION24</span>
                   <div className="text-xs text-orange-400 font-bold">PREMIUM FITNESS STUDIO</div>
                 </div>
               </div>
-              <p className="text-gray-400 leading-relaxed mb-6 text-lg">
+              <p className="text-gray-400 leading-relaxed mb-4 sm:mb-6 text-sm sm:text-lg">
                 Complete fitness ecosystem offering training, recovery, and transformation programs in Iyyappanthangal, Chennai.
               </p>
-              <p className="text-orange-400 font-black text-xl">Train Strong. Transform Smart.</p>
+              <p className="text-orange-400 font-black text-lg sm:text-xl">Train Strong. Transform Smart.</p>
             </div>
             
             <div>
-              <h4 className="font-black text-white mb-8 text-xl flex items-center gap-2">
-                <Dumbbell className="h-6 w-6 text-orange-400" />
+              <h4 className="font-black text-white mb-4 sm:mb-8 text-lg sm:text-xl flex items-center gap-2">
+                <Dumbbell className="h-5 w-5 sm:h-6 sm:w-6 text-orange-400" />
                 PROGRAMS
               </h4>
-              <ul className="space-y-4 text-gray-400 text-lg">
+              <ul className="space-y-2 sm:space-y-4 text-gray-400 text-sm sm:text-lg">
                 {['Strength Training', 'Boxing Classes', 'CrossFit Training', 'Bootcamp Workouts', 'Functional Training', 'Cardio & Fat Loss'].map((program) => (
                   <li key={program} className="hover:text-orange-400 transition-colors cursor-pointer flex items-center gap-2">
-                    <ArrowRight className="h-4 w-4" />
+                    <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4" />
                     {program}
                   </li>
                 ))}
@@ -1105,14 +1108,14 @@ export default function Fusion24Website() {
             </div>
             
             <div>
-              <h4 className="font-black text-white mb-8 text-xl flex items-center gap-2">
-                <Shield className="h-6 w-6 text-orange-400" />
+              <h4 className="font-black text-white mb-4 sm:mb-8 text-lg sm:text-xl flex items-center gap-2">
+                <Shield className="h-5 w-5 sm:h-6 sm:w-6 text-orange-400" />
                 FACILITIES
               </h4>
-              <ul className="space-y-4 text-gray-400 text-lg">
+              <ul className="space-y-2 sm:space-y-4 text-gray-400 text-sm sm:text-lg">
                 {['Modern Equipment', 'Free Steam Bath', 'Boxing Area', 'CrossFit Rigs', 'Recovery Zones', 'Nutrition Support'].map((facility) => (
                   <li key={facility} className="hover:text-orange-400 transition-colors cursor-pointer flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4" />
+                    <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4" />
                     {facility}
                   </li>
                 ))}
@@ -1120,29 +1123,29 @@ export default function Fusion24Website() {
             </div>
             
             <div>
-              <h4 className="font-black text-white mb-8 text-xl flex items-center gap-2">
-                <MapPin className="h-6 w-6 text-orange-400" />
+              <h4 className="font-black text-white mb-4 sm:mb-8 text-lg sm:text-xl flex items-center gap-2">
+                <MapPin className="h-5 w-5 sm:h-6 sm:w-6 text-orange-400" />
                 CONTACT
               </h4>
-              <ul className="space-y-4 text-gray-400 text-lg">
-                <li className="flex items-start gap-3">
-                  <MapPin className="h-5 w-5 text-orange-400 mt-1 flex-shrink-0" />
+              <ul className="space-y-3 sm:space-y-4 text-gray-400 text-sm sm:text-lg">
+                <li className="flex items-start gap-2 sm:gap-3">
+                  <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-orange-400 mt-1 flex-shrink-0" />
                   <span>Iyyappanthangal Main Road<br />Near Major Hospitals<br />Chennai, Tamil Nadu</span>
                 </li>
-                <li className="hover:text-orange-400 transition-colors cursor-pointer flex items-center gap-3">
-                  <Phone className="h-5 w-5 text-orange-400" />
+                <li className="hover:text-orange-400 transition-colors cursor-pointer flex items-center gap-2 sm:gap-3">
+                  <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-orange-400" />
                   +91 98765 43210
                 </li>
-                <li className="hover:text-orange-400 transition-colors cursor-pointer flex items-center gap-3">
-                  <Mail className="h-5 w-5 text-orange-400" />
+                <li className="hover:text-orange-400 transition-colors cursor-pointer flex items-center gap-2 sm:gap-3">
+                  <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-orange-400" />
                   info@fusion24gym.com
                 </li>
               </ul>
             </div>
           </div>
           
-          <div className="border-t-2 border-gray-800 pt-8 text-center">
-            <p className="text-gray-500 text-lg">
+          <div className="border-t-2 border-gray-800 pt-6 sm:pt-8 text-center">
+            <p className="text-gray-500 text-sm sm:text-lg">
               &copy; 2026 Fusion24 Fitness Studio. All rights reserved. 
               <span className="text-orange-400 font-black"> Your Complete Premium Fitness Ecosystem.</span>
             </p>
