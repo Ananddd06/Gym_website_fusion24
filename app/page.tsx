@@ -742,9 +742,9 @@ export default function Fusion24Website() {
                   "Priority class booking",
                   "Guest pass (2 per month)"
                 ],
-                popular: true,
+                popular: false,
                 savings: "Save ₹4,000",
-                badge: "MOST POPULAR"
+                badge: "GOOD VALUE"
               },
               {
                 name: "1-YEAR ELITE",
@@ -767,9 +767,9 @@ export default function Fusion24Website() {
                   "Exclusive member events",
                   "Best value guarantee"
                 ],
-                popular: false,
+                popular: true,
                 savings: "Save ₹13,500",
-                badge: "BEST VALUE"
+                badge: "MOST POPULAR"
               }
             ].map((plan, index) => (
               <Card key={index} className={`relative overflow-hidden transform transition-all duration-500 hover:scale-105 ${
@@ -803,25 +803,25 @@ export default function Fusion24Website() {
                   </div>
                 )}
                 
-                <CardHeader className="relative z-10 text-center pt-8 sm:pt-12 pb-6 sm:pb-8">
+                <CardHeader className="relative z-10 text-center pt-8 sm:pt-12 pb-6 sm:pb-8 px-4 sm:px-6">
                   <div className="mb-4 sm:mb-6">
                     <div className="text-sm sm:text-lg font-black text-orange-400 uppercase tracking-wide mb-2 sm:mb-3">{plan.name}</div>
                     <div className="text-4xl sm:text-6xl font-black text-white mb-2 sm:mb-3">{plan.price}</div>
                     <div className="text-gray-400 text-sm sm:text-lg mb-1 sm:mb-2">{plan.period}</div>
                     <div className="text-lg sm:text-2xl text-orange-400 font-bold mb-2">{plan.monthlyPrice}</div>
                     {plan.savings && (
-                      <div className="inline-block bg-green-500/20 border border-green-500/30 px-3 sm:px-4 py-1 sm:py-2 rounded-full">
+                      <div className="inline-block bg-green-500/20 border border-green-500/30 px-3 sm:px-4 py-1 sm:py-2 rounded-full mb-2">
                         <span className="text-green-400 font-bold text-xs sm:text-sm">{plan.savings}</span>
                       </div>
                     )}
-                    <div className="text-gray-500 mt-2 sm:mt-3 text-sm sm:text-lg">{plan.description}</div>
+                    <div className="text-gray-500 mt-2 sm:mt-3 text-sm sm:text-lg px-2">{plan.description}</div>
                   </div>
                 </CardHeader>
                 
-                <CardContent className="relative z-10 px-4 sm:px-8 pb-6 sm:pb-8">
+                <CardContent className="relative z-10 px-4 sm:px-6 lg:px-8 pb-6 sm:pb-8">
                   <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
                     {plan.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start gap-2 sm:gap-3">
+                      <li key={featureIndex} className="flex items-start gap-2 sm:gap-3 px-2">
                         <CheckCircle className="h-4 w-4 sm:h-6 sm:w-6 text-orange-500 flex-shrink-0 mt-0.5" />
                         <span className="text-gray-300 leading-relaxed text-sm sm:text-base">{feature}</span>
                       </li>
