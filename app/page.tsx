@@ -184,111 +184,101 @@ export default function Fusion24Website() {
               <TabsTrigger value="cardio" className="data-[state=active]:bg-orange-500 data-[state=active]:text-white rounded-lg sm:rounded-xl font-semibold text-xs sm:text-sm">CARDIO</TabsTrigger>
             </TabsList>
             
-            <TabsContent value="strength">
-              <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl border border-gray-800/50 rounded-2xl sm:rounded-3xl overflow-hidden">
+            <TabsContent value="strength" className="mt-8">
+              <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl border border-gray-800/50 rounded-2xl sm:rounded-3xl overflow-hidden mx-4 sm:mx-0">
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-transparent"></div>
-                <CardHeader className="relative z-10 p-4 sm:p-6 lg:p-8">
-                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4 sm:mb-6 gap-4">
-                    <div className="flex items-center gap-3 sm:gap-4">
-                      <div className="p-3 sm:p-4 bg-orange-500/10 rounded-xl sm:rounded-2xl border border-orange-500/20">
-                        <Dumbbell className="h-6 w-6 sm:h-8 sm:w-8 text-orange-500" />
+                <CardHeader className="relative z-10 p-6 sm:p-8">
+                  <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between mb-6 gap-4">
+                    <div className="flex items-start sm:items-center gap-4 flex-col sm:flex-row">
+                      <div className="p-4 bg-orange-500/10 rounded-2xl border border-orange-500/20 mx-auto sm:mx-0">
+                        <Dumbbell className="h-8 w-8 text-orange-500" />
                       </div>
-                      <div>
-                        <CardTitle className="text-2xl sm:text-3xl font-black text-white mb-1 sm:mb-2">STRENGTH TRAINING</CardTitle>
+                      <div className="text-center sm:text-left">
+                        <CardTitle className="text-2xl sm:text-3xl font-black text-white mb-2">STRENGTH TRAINING</CardTitle>
                         <CardDescription className="text-base sm:text-lg text-gray-300">Build muscle mass, increase power, transform your physique</CardDescription>
                       </div>
                     </div>
-                    <div className="text-left sm:text-right">
-                      <div className="text-xl sm:text-2xl font-black text-orange-500">ELITE</div>
-                      <div className="text-xs sm:text-sm text-gray-400">PROGRAM</div>
+                    <div className="text-center lg:text-right mx-auto lg:mx-0">
+                      <div className="text-2xl font-black text-orange-500">ELITE</div>
+                      <div className="text-sm text-gray-400">PROGRAM</div>
                     </div>
                   </div>
                 </CardHeader>
-                <CardContent className="relative z-10 p-4 sm:p-6 lg:p-8 pt-0">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-6 sm:mb-8">
-                    <div className="bg-gray-800/30 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-gray-700/50">
-                      <h4 className="font-bold text-white mb-3 sm:mb-4 flex items-center gap-2 text-sm sm:text-base">
-                        <Target className="h-4 w-4 sm:h-5 sm:w-5 text-orange-500" />
-                        WHO IT'S FOR
-                      </h4>
-                      <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-gray-300">
-                        <li>• Beginners to advanced</li>
-                        <li>• Muscle building goals</li>
-                        <li>• Strength improvement</li>
-                        <li>• Body transformation</li>
-                      </ul>
-                    </div>
-                    <div className="bg-gray-800/30 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-gray-700/50">
-                      <h4 className="font-bold text-white mb-3 sm:mb-4 flex items-center gap-2 text-sm sm:text-base">
-                        <Calendar className="h-4 w-4 sm:h-5 sm:w-5 text-orange-500" />
-                        FREQUENCY
-                      </h4>
-                      <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-gray-300">
-                        <li>• 4-6 sessions per week</li>
-                        <li>• 60-90 minutes each</li>
-                        <li>• Progressive overload</li>
-                        <li>• Rest day guidance</li>
-                      </ul>
-                    </div>
-                    <div className="bg-gray-800/30 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-gray-700/50">
-                      <h4 className="font-bold text-white mb-3 sm:mb-4 flex items-center gap-2 text-sm sm:text-base">
-                        <Zap className="h-4 w-4 sm:h-5 sm:w-5 text-orange-500" />
-                        EQUIPMENT
-                      </h4>
-                      <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-gray-300">
-                        <li>• Olympic barbells</li>
-                        <li>• Cable machines</li>
-                        <li>• Power racks</li>
-                        <li>• Free weights</li>
-                      </ul>
-                    </div>
-                    <div className="bg-gray-800/30 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-gray-700/50">
-                      <h4 className="font-bold text-white mb-3 sm:mb-4 flex items-center gap-2 text-sm sm:text-base">
-                        <Trophy className="h-4 w-4 sm:h-5 sm:w-5 text-orange-500" />
-                        EXPECTED RESULTS
-                      </h4>
-                      <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-gray-300">
-                        <li>• 40%+ strength gains</li>
-                        <li>• Muscle mass increase</li>
-                        <li>• Better body composition</li>
-                        <li>• Enhanced confidence</li>
-                      </ul>
-                    </div>
+                <CardContent className="relative z-10 p-6 sm:p-8 pt-0">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mb-8">
+                    {[
+                      {
+                        icon: Target,
+                        title: "WHO IT'S FOR",
+                        items: ["Beginners to advanced", "Muscle building goals", "Strength improvement", "Body transformation"]
+                      },
+                      {
+                        icon: Calendar,
+                        title: "FREQUENCY", 
+                        items: ["4-6 sessions per week", "60-90 minutes each", "Progressive overload", "Rest day guidance"]
+                      },
+                      {
+                        icon: Zap,
+                        title: "EQUIPMENT",
+                        items: ["Olympic barbells", "Cable machines", "Power racks", "Free weights"]
+                      },
+                      {
+                        icon: Trophy,
+                        title: "EXPECTED RESULTS",
+                        items: ["40%+ strength gains", "Muscle mass increase", "Better body composition", "Enhanced confidence"]
+                      }
+                    ].map((section, index) => (
+                      <div key={index} className="bg-gray-800/30 rounded-2xl p-6 border border-gray-700/50">
+                        <h4 className="font-bold text-white mb-4 flex items-center gap-2 text-base">
+                          <section.icon className="h-5 w-5 text-orange-500" />
+                          {section.title}
+                        </h4>
+                        <ul className="space-y-2 text-sm text-gray-300">
+                          {section.items.map((item, i) => (
+                            <li key={i}>• {item}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
                   </div>
-                  <Button className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-full shadow-lg hover:shadow-orange-500/25 transition-all duration-300 text-sm sm:text-base">
-                    START STRENGTH PROGRAM
-                    <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
-                  </Button>
+                  <div className="text-center lg:text-left">
+                    <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-orange-500/25 transition-all duration-300">
+                      START STRENGTH PROGRAM
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             </TabsContent>
 
-            <TabsContent value="boxing">
-              <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl border border-gray-800/50 rounded-2xl sm:rounded-3xl overflow-hidden">
+            <TabsContent value="boxing" className="mt-8">
+              <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl border border-gray-800/50 rounded-2xl sm:rounded-3xl overflow-hidden mx-4 sm:mx-0">
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-transparent"></div>
-                <CardHeader className="relative z-10 p-4 sm:p-6 lg:p-8">
-                  <CardTitle className="text-2xl sm:text-3xl font-black text-white flex items-center gap-3 sm:gap-4 mb-2 sm:mb-4">
-                    <div className="p-3 sm:p-4 bg-orange-500/10 rounded-xl sm:rounded-2xl border border-orange-500/20">
-                      <Flame className="h-6 w-6 sm:h-8 sm:w-8 text-orange-500" />
+                <CardHeader className="relative z-10 p-6 sm:p-8">
+                  <div className="flex items-start sm:items-center gap-4 mb-4 flex-col sm:flex-row text-center sm:text-left">
+                    <div className="p-4 bg-orange-500/10 rounded-2xl border border-orange-500/20 mx-auto sm:mx-0">
+                      <Flame className="h-8 w-8 text-orange-500" />
                     </div>
-                    BOXING TRAINING
-                  </CardTitle>
-                  <CardDescription className="text-base sm:text-lg text-gray-300 px-4 sm:px-0">Learn technique, build cardio, develop mental toughness and self-defense skills</CardDescription>
+                    <div>
+                      <CardTitle className="text-2xl sm:text-3xl font-black text-white mb-2">BOXING TRAINING</CardTitle>
+                      <CardDescription className="text-base sm:text-lg text-gray-300">Learn technique, build cardio, develop mental toughness and self-defense skills</CardDescription>
+                    </div>
+                  </div>
                 </CardHeader>
-                <CardContent className="relative z-10 p-4 sm:p-6 lg:p-8 pt-0">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
-                    <div className="bg-gray-800/30 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-gray-700/50">
-                      <h4 className="font-bold text-white mb-2 sm:mb-3 text-sm sm:text-base">Training Focus:</h4>
-                      <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-gray-300">
+                <CardContent className="relative z-10 p-6 sm:p-8 pt-0">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                    <div className="bg-gray-800/30 rounded-2xl p-6 border border-gray-700/50">
+                      <h4 className="font-bold text-white mb-3 text-base">Training Focus:</h4>
+                      <ul className="space-y-2 text-sm text-gray-300">
                         <li>• Technique & footwork fundamentals</li>
                         <li>• Pad work & sparring sessions</li>
                         <li>• Conditioning & cardio improvement</li>
                         <li>• Self-defense applications</li>
                       </ul>
                     </div>
-                    <div className="bg-gray-800/30 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-gray-700/50">
-                      <h4 className="font-bold text-white mb-2 sm:mb-3 text-sm sm:text-base">Best For:</h4>
-                      <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-gray-300">
+                    <div className="bg-gray-800/30 rounded-2xl p-6 border border-gray-700/50">
+                      <h4 className="font-bold text-white mb-3 text-base">Best For:</h4>
+                      <ul className="space-y-2 text-sm text-gray-300">
                         <li>• Fat loss & conditioning</li>
                         <li>• Stress relief & confidence</li>
                         <li>• Coordination improvement</li>
@@ -296,67 +286,77 @@ export default function Fusion24Website() {
                       </ul>
                     </div>
                   </div>
-                  <Button className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-full text-sm sm:text-base">
-                    JOIN BOXING CLASSES
-                  </Button>
+                  <div className="text-center lg:text-left">
+                    <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold px-8 py-4 rounded-full">
+                      JOIN BOXING CLASSES
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             </TabsContent>
 
-            <TabsContent value="crossfit">
-              <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl border border-gray-800/50 rounded-2xl sm:rounded-3xl">
-                <CardHeader className="p-4 sm:p-6 lg:p-8">
-                  <CardTitle className="text-2xl sm:text-3xl font-black text-white mb-2 sm:mb-4">CROSSFIT TRAINING</CardTitle>
+            <TabsContent value="crossfit" className="mt-8">
+              <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl border border-gray-800/50 rounded-2xl sm:rounded-3xl mx-4 sm:mx-0">
+                <CardHeader className="p-6 sm:p-8 text-center lg:text-left">
+                  <CardTitle className="text-2xl sm:text-3xl font-black text-white mb-4">CROSSFIT TRAINING</CardTitle>
                   <CardDescription className="text-base sm:text-lg text-gray-300">High-intensity functional training focused on strength, endurance, and agility</CardDescription>
                 </CardHeader>
-                <CardContent className="p-4 sm:p-6 lg:p-8 pt-0">
-                  <p className="text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base leading-relaxed">Varied workouts combining weightlifting, cardio, and gymnastics movements for complete fitness transformation.</p>
-                  <Button className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-full text-sm sm:text-base">
-                    START CROSSFIT
-                  </Button>
+                <CardContent className="p-6 sm:p-8 pt-0">
+                  <p className="text-gray-300 mb-8 text-sm sm:text-base leading-relaxed text-center lg:text-left">Varied workouts combining weightlifting, cardio, and gymnastics movements for complete fitness transformation.</p>
+                  <div className="text-center lg:text-left">
+                    <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold px-8 py-4 rounded-full">
+                      START CROSSFIT
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             </TabsContent>
 
-            <TabsContent value="bootcamp">
-              <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl border border-gray-800/50 rounded-2xl sm:rounded-3xl">
-                <CardHeader className="p-4 sm:p-6 lg:p-8">
-                  <CardTitle className="text-2xl sm:text-3xl font-black text-white mb-2 sm:mb-4">BOOTCAMP CLASSES</CardTitle>
+            <TabsContent value="bootcamp" className="mt-8">
+              <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl border border-gray-800/50 rounded-2xl sm:rounded-3xl mx-4 sm:mx-0">
+                <CardHeader className="p-6 sm:p-8 text-center lg:text-left">
+                  <CardTitle className="text-2xl sm:text-3xl font-black text-white mb-4">BOOTCAMP CLASSES</CardTitle>
                   <CardDescription className="text-base sm:text-lg text-gray-300">Group-based conditioning ideal for fat loss and stamina building</CardDescription>
                 </CardHeader>
-                <CardContent className="p-4 sm:p-6 lg:p-8 pt-0">
-                  <p className="text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base leading-relaxed">High-energy group workouts combining cardio, strength, and functional movements in a motivating environment.</p>
-                  <Button className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-full text-sm sm:text-base">
-                    JOIN BOOTCAMP
-                  </Button>
+                <CardContent className="p-6 sm:p-8 pt-0">
+                  <p className="text-gray-300 mb-8 text-sm sm:text-base leading-relaxed text-center lg:text-left">High-energy group workouts combining cardio, strength, and functional movements in a motivating environment.</p>
+                  <div className="text-center lg:text-left">
+                    <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold px-8 py-4 rounded-full">
+                      JOIN BOOTCAMP
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             </TabsContent>
 
-            <TabsContent value="functional">
-              <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl border border-gray-800/50 rounded-2xl sm:rounded-3xl">
-                <CardHeader className="p-4 sm:p-6 lg:p-8">
-                  <CardTitle className="text-2xl sm:text-3xl font-black text-white mb-2 sm:mb-4">FUNCTIONAL TRAINING</CardTitle>
+            <TabsContent value="functional" className="mt-8">
+              <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl border border-gray-800/50 rounded-2xl sm:rounded-3xl mx-4 sm:mx-0">
+                <CardHeader className="p-6 sm:p-8 text-center lg:text-left">
+                  <CardTitle className="text-2xl sm:text-3xl font-black text-white mb-4">FUNCTIONAL TRAINING</CardTitle>
                   <CardDescription className="text-base sm:text-lg text-gray-300">Real-world movement patterns for daily life improvement</CardDescription>
                 </CardHeader>
-                <CardContent className="p-4 sm:p-6 lg:p-8 pt-0">
-                  <Button className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-full text-sm sm:text-base">
-                    START FUNCTIONAL
-                  </Button>
+                <CardContent className="p-6 sm:p-8 pt-0">
+                  <div className="text-center lg:text-left">
+                    <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold px-8 py-4 rounded-full">
+                      START FUNCTIONAL
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             </TabsContent>
 
-            <TabsContent value="cardio">
-              <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl border border-gray-800/50 rounded-2xl sm:rounded-3xl">
-                <CardHeader className="p-4 sm:p-6 lg:p-8">
-                  <CardTitle className="text-2xl sm:text-3xl font-black text-white mb-2 sm:mb-4">CARDIO & FAT LOSS</CardTitle>
+            <TabsContent value="cardio" className="mt-8">
+              <Card className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-xl border border-gray-800/50 rounded-2xl sm:rounded-3xl mx-4 sm:mx-0">
+                <CardHeader className="p-6 sm:p-8 text-center lg:text-left">
+                  <CardTitle className="text-2xl sm:text-3xl font-black text-white mb-4">CARDIO & FAT LOSS</CardTitle>
                   <CardDescription className="text-base sm:text-lg text-gray-300">Targeted programs for weight loss and cardiovascular health</CardDescription>
                 </CardHeader>
-                <CardContent className="p-4 sm:p-6 lg:p-8 pt-0">
-                  <Button className="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-full text-sm sm:text-base">
-                    START CARDIO PROGRAM
-                  </Button>
+                <CardContent className="p-6 sm:p-8 pt-0">
+                  <div className="text-center lg:text-left">
+                    <Button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold px-8 py-4 rounded-full">
+                      START CARDIO PROGRAM
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             </TabsContent>
@@ -541,7 +541,7 @@ export default function Fusion24Website() {
             ))}
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-16 sm:mb-20 px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-12 px-4">
             {[
               {
                 name: "RAJESH KUMAR",
@@ -574,36 +574,36 @@ export default function Fusion24Website() {
                 image: "👨‍🏋️"
               }
             ].map((trainer, index) => (
-              <Card key={index} className="bg-gradient-to-br from-gray-900/90 to-black/90 backdrop-blur-xl border-2 border-orange-500/30 rounded-3xl overflow-hidden group hover:border-orange-400/60 transition-all duration-500 shadow-2xl transform hover:scale-105">
+              <Card key={index} className="bg-gradient-to-br from-gray-900/90 to-black/90 backdrop-blur-xl border-2 border-orange-500/30 rounded-2xl sm:rounded-3xl overflow-hidden group hover:border-orange-400/60 transition-all duration-500 shadow-2xl transform hover:scale-105 mx-auto max-w-sm lg:max-w-none">
                 <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
-                <CardHeader className="relative z-10 text-center pb-6">
-                  <div className="text-6xl mb-4">{trainer.image}</div>
-                  <div className="flex items-center justify-center gap-2 mb-4">
+                <CardHeader className="relative z-10 text-center p-6 sm:p-8">
+                  <div className="text-4xl sm:text-6xl mb-4">{trainer.image}</div>
+                  <div className="flex flex-col items-center gap-3 mb-4">
                     <div className="flex items-center gap-1">
                       {[...Array(5)].map((_, i) => (
-                        <Star key={i} className={`h-5 w-5 ${i < Math.floor(trainer.rating) ? 'fill-orange-500 text-orange-500' : 'text-gray-600'}`} />
+                        <Star key={i} className={`h-4 w-4 sm:h-5 sm:w-5 ${i < Math.floor(trainer.rating) ? 'fill-orange-500 text-orange-500' : 'text-gray-600'}`} />
                       ))}
-                      <span className="text-lg font-bold text-orange-400 ml-2">{trainer.rating}</span>
+                      <span className="text-base sm:text-lg font-bold text-orange-400 ml-2">{trainer.rating}</span>
                     </div>
-                    <div className="px-4 py-2 bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 rounded-full">
-                      <span className="text-sm font-black text-orange-300">CERTIFIED EXPERT</span>
+                    <div className="px-3 sm:px-4 py-1 sm:py-2 bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 rounded-full">
+                      <span className="text-xs sm:text-sm font-black text-orange-300">CERTIFIED EXPERT</span>
                     </div>
                   </div>
-                  <CardTitle className="text-3xl font-black text-white mb-3">{trainer.name}</CardTitle>
-                  <CardDescription className="text-orange-400 font-bold text-xl mb-2">{trainer.specialty}</CardDescription>
-                  <div className="text-gray-300 font-semibold">{trainer.experience}</div>
+                  <CardTitle className="text-xl sm:text-2xl lg:text-3xl font-black text-white mb-2 sm:mb-3 leading-tight">{trainer.name}</CardTitle>
+                  <CardDescription className="text-orange-400 font-bold text-base sm:text-lg lg:text-xl mb-2 leading-tight">{trainer.specialty}</CardDescription>
+                  <div className="text-gray-300 font-semibold text-sm sm:text-base">{trainer.experience}</div>
                 </CardHeader>
                 
-                <CardContent className="relative z-10 space-y-6">
+                <CardContent className="relative z-10 p-6 sm:p-8 space-y-6">
                   <div>
-                    <h4 className="text-white font-bold mb-3 flex items-center gap-2">
-                      <Award className="h-5 w-5 text-orange-400" />
+                    <h4 className="text-white font-bold mb-3 flex items-center gap-2 text-sm sm:text-base">
+                      <Award className="h-4 w-4 sm:h-5 sm:w-5 text-orange-400" />
                       CERTIFICATIONS
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {trainer.certifications.map((cert, i) => (
-                        <span key={i} className="bg-orange-500/20 border border-orange-500/30 px-3 py-1 rounded-full text-sm font-semibold text-orange-300">
+                        <span key={i} className="bg-orange-500/20 border border-orange-500/30 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-semibold text-orange-300">
                           {cert}
                         </span>
                       ))}
@@ -611,33 +611,33 @@ export default function Fusion24Website() {
                   </div>
                   
                   <div>
-                    <h4 className="text-white font-bold mb-3 flex items-center gap-2">
-                      <Trophy className="h-5 w-5 text-orange-400" />
+                    <h4 className="text-white font-bold mb-3 flex items-center gap-2 text-sm sm:text-base">
+                      <Trophy className="h-4 w-4 sm:h-5 sm:w-5 text-orange-400" />
                       ACHIEVEMENTS
                     </h4>
                     <ul className="space-y-2">
                       {trainer.achievements.map((achievement, i) => (
-                        <li key={i} className="text-gray-300 text-sm flex items-center gap-2">
-                          <CheckCircle className="h-4 w-4 text-orange-400 flex-shrink-0" />
-                          {achievement}
+                        <li key={i} className="text-gray-300 text-xs sm:text-sm flex items-start gap-2 leading-relaxed">
+                          <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 text-orange-400 flex-shrink-0 mt-0.5" />
+                          <span>{achievement}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
                   
                   <div>
-                    <h4 className="text-white font-bold mb-3 flex items-center gap-2">
-                      <Heart className="h-5 w-5 text-orange-400" />
+                    <h4 className="text-white font-bold mb-3 flex items-center gap-2 text-sm sm:text-base">
+                      <Heart className="h-4 w-4 sm:h-5 sm:w-5 text-orange-400" />
                       TRAINING PHILOSOPHY
                     </h4>
-                    <p className="text-gray-300 italic leading-relaxed">"{trainer.philosophy}"</p>
+                    <p className="text-gray-300 italic leading-relaxed text-xs sm:text-sm">"{trainer.philosophy}"</p>
                   </div>
                   
-                  <div className="flex gap-3 pt-4">
-                    <Button className="flex-1 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-black rounded-2xl py-3 shadow-xl">
+                  <div className="flex flex-col sm:flex-row gap-3 pt-4">
+                    <Button className="flex-1 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-black rounded-xl sm:rounded-2xl py-2 sm:py-3 shadow-xl text-xs sm:text-sm">
                       BOOK SESSION
                     </Button>
-                    <Button variant="outline" className="border-2 border-orange-500/50 text-orange-400 hover:bg-orange-500 hover:text-white rounded-2xl px-6">
+                    <Button variant="outline" className="border-2 border-orange-500/50 text-orange-400 hover:bg-orange-500 hover:text-white rounded-xl sm:rounded-2xl px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm">
                       VIEW PROFILE
                     </Button>
                   </div>
