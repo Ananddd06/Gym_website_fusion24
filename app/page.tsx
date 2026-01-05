@@ -721,7 +721,7 @@ export default function Fusion24Website() {
                 ],
                 popular: false,
                 savings: null,
-                badge: "STARTER"
+                badge: null
               },
               {
                 name: "6-MONTH PREMIUM",
@@ -744,7 +744,7 @@ export default function Fusion24Website() {
                 ],
                 popular: false,
                 savings: "Save ₹4,000",
-                badge: "GOOD VALUE"
+                badge: null
               },
               {
                 name: "1-YEAR ELITE",
@@ -786,18 +786,18 @@ export default function Fusion24Website() {
                 } opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
 
                 {plan.popular && (
-                  <div className="absolute -top-4 sm:-top-6 left-1/2 transform -translate-x-1/2 z-20">
-                    <div className="bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 text-white px-4 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-lg font-black shadow-2xl border-2 border-orange-400/50">
-                      <Crown className="inline h-3 w-3 sm:h-5 sm:w-5 mr-1 sm:mr-2" />
+                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 z-20">
+                    <div className="bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-lg font-black shadow-2xl border-2 border-orange-400/50">
+                      <Crown className="inline h-4 w-4 sm:h-5 sm:w-5 mr-2" />
                       {plan.badge}
-                      <Crown className="inline h-3 w-3 sm:h-5 sm:w-5 ml-1 sm:ml-2" />
+                      <Crown className="inline h-4 w-4 sm:h-5 sm:w-5 ml-2" />
                     </div>
                   </div>
                 )}
 
-                {!plan.popular && (
-                  <div className="absolute -top-3 sm:-top-4 left-1/2 transform -translate-x-1/2 z-20">
-                    <div className="bg-gradient-to-r from-gray-700 to-gray-800 text-white px-3 sm:px-6 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-bold shadow-xl">
+                {!plan.popular && plan.badge && (
+                  <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 z-20">
+                    <div className="bg-gradient-to-r from-gray-700 to-gray-800 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full text-xs sm:text-sm font-bold shadow-xl border border-gray-600">
                       {plan.badge}
                     </div>
                   </div>
