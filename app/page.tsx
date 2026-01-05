@@ -786,11 +786,16 @@ export default function Fusion24Website() {
                 } opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
 
                 {plan.popular && (
-                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 z-20">
-                    <div className="bg-gradient-to-r from-orange-500 via-red-500 to-orange-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-lg font-black shadow-2xl border-2 border-orange-400/50">
-                      <Crown className="inline h-4 w-4 sm:h-5 sm:w-5 mr-2" />
-                      {plan.badge}
-                      <Crown className="inline h-4 w-4 sm:h-5 sm:w-5 ml-2" />
+                  <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 z-20">
+                    <div className="relative">
+                      <div className="bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-black px-8 py-4 rounded-2xl font-black shadow-2xl border-2 border-yellow-300 transform rotate-1">
+                        <div className="flex items-center gap-2">
+                          <Star className="h-5 w-5 fill-current animate-pulse" />
+                          <span className="text-sm sm:text-base tracking-wide">MOST POPULAR</span>
+                          <Star className="h-5 w-5 fill-current animate-pulse" />
+                        </div>
+                      </div>
+                      <div className="absolute -top-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full animate-ping"></div>
                     </div>
                   </div>
                 )}
