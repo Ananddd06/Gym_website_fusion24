@@ -786,7 +786,7 @@ export default function Fusion24Website() {
                 } opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
 
                 {plan.popular && (
-                  <div className="absolute top-4 right-4 z-20">
+                  <div className="absolute top-6 right-6 z-20">
                     <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                       ⭐ POPULAR
                     </div>
@@ -794,7 +794,7 @@ export default function Fusion24Website() {
                 )}
 
                 {!plan.popular && plan.badge && (
-                  <div className="absolute top-4 right-4 z-20">
+                  <div className="absolute top-6 right-6 z-20">
                     <div className="bg-gradient-to-r from-gray-700 to-gray-800 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
                       {plan.badge}
                     </div>
